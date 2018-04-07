@@ -39,6 +39,10 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rails-controller-testing', '1.0.2'
+  gem 'minitest-reporters',       '1.1.14'
+  gem 'guard',                    '2.13.0'
+  gem 'guard-minitest',           '2.4.4'
 end
 
 group :development do
@@ -48,6 +52,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem "pry"
+  gem "pry-rails"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -57,3 +65,18 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # backend admin interface
 gem 'adminlte2-rails'
 gem 'mysql2'
+gem 'devise'
+gem 'jquery-rails'    # Use jquery as the JavaScript library
+gem 'slim-rails'
+gem "bower-rails"
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'echarts-rails'
+gem 'china_city'
+source 'https://rails-assets.org/' do
+  gem 'rails-assets-adminlte'
+end
+
+# group :production do
+#   gem 'pg', '0.20.0'
+# end
